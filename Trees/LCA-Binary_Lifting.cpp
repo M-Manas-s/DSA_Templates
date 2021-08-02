@@ -14,7 +14,7 @@ mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 int timer;                      // timer -> Used to record time for evaluation of Euler tour
 int l;                          // l -> Logarithmic limit of parents
 int size;                       // size -> Size of up array (use size+1 in main for 1-based tree)
-vector<int> tin, tout;          // tin,tout -> time when dfds for that node started and ended respectively
+vector<int> tin, tout;          // tin,tout -> time when dfs for that node started and ended respectively
 vector<vector<int>> up;         // up -> Stores ancestors of node in the power of 2
 vi adj[100005];                 // adj -> adjacency list
 

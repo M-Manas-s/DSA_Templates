@@ -4,3 +4,6 @@ To whoever who reaches here, this is a repository where I store my DSA Algorithm
 
 ## Trees
 [LCA - Binary Lifting](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/LCA-Binary_Lifting.cpp)
+
+## String
+[Prefix function - Knuth–Morris–Pratt ](https://github.com/M-Manas-s/DSA_Templates/blob/master/String/KMP.cpp)

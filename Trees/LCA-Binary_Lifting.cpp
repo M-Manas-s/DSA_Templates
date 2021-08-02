@@ -99,9 +99,9 @@ int lca(int u, int v)
 }
 
 /**
- * @brief Preprocesses up vector for finding LCA 
+ * @brief Preprocesses 'up' vector for finding LCA 
  * 
- * @param root Root of tree
+ * @param root Root of the Tree
  */
 
 void preprocess(int root) {
@@ -150,3 +150,5 @@ int main(){
 //                                     6     4    5
 //                                    /       \    \
 //                                   9         7    8
+//
+//

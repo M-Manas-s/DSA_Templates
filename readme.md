@@ -1,4 +1,4 @@
 # DSA Templates
 
 ## Trees
-[Binary Lifting]
+[LCA - Binary Lifting](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/LCA-Binary_Lifting.cpp)

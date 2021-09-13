@@ -88,7 +88,7 @@ void merge(int a[], int low, int mid, int high){
  * So where is the sort part? When we divide the array into two subarrays of length 1, we have two
  * sorted subarrays ( PS. Arrays with single element are sorted :P ). Now, we merge them with the
  * merge function and move forward to merging the next subarrays. This is done until low < high, or 
- * essintially the lower and higher index do not cross each other, this can happend with singleton
+ * essintially the lower and higher index do not cross each other, this can happen with singleton
  * arrays.
  * 
  * If you study the algorithm in terms of a binary tree, mergeSort follows a post-order merge, ie,

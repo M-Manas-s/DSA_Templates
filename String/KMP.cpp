@@ -72,7 +72,10 @@ vector<int> buildLPS(string p)
  *          ab                  (No match, rollback to first index => ci=1)
  * 
  *          aababaabaababa
- *          xab                 (We didn't match the first index again. Match => ci=2)
+ *          xa                  (Match => ci=1)
+ *
+ *          aababaabaababa
+ *          xab                 (Match => ci=2)
  * 
  *          aababaabaababa      (ci == p.length() == 3 , 1 complete pattern match found)
  *          xaba

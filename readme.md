@@ -5,6 +5,10 @@ To whoever reaches here, this is a repository where I store my DSA Algorithms an
 [Quick Sort](https://github.com/M-Manas-s/DSA_Templates/blob/master/Sorting/Quick_Sort.cpp)\
 [Merge Sort](https://github.com/M-Manas-s/DSA_Templates/blob/master/Sorting/Merge_Sort.cpp)
 
+## Dynamic Programming
+[Knapsack](https://github.com/M-Manas-s/DSA_Templates/blob/master/Dynamic_Programming/Knapsack.cpp)\
+[Subset Sum](https://github.com/M-Manas-s/DSA_Templates/blob/master/Dynamic_Programming/SubsetSum.cpp)\
+
 ## Trees
 [LCA - Binary Lifting](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/LCA-Binary_Lifting.cpp)\
 [BIT - Fenwick Tree](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/BIT-FenwickTree.cpp)

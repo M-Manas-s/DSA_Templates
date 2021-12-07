@@ -27,7 +27,7 @@ vi adj[100005];                 // adj -> adjacency list
  * up[node][1] = up[up[node][0]][0] = up[parent][0] (2^1th = 2nd parent = Grandparent)
  *      up[node][0] is Parent
  *      up[parent][0] is Parent's Parent
- *      up[up[node][0]][0] is Grandparent of that ndoe
+ *      up[up[node][0]][0] is Grandparent of that node
  *
  * 
  * up[node][2] = up[up[node][1]][1] = up[Grandparent][1] (2^th = 4th parent = Grandparent's Grandparent )
@@ -58,7 +58,7 @@ void dfs(int v, int p)
 
 /**
  * @brief Evaluates Euler tour based on tin and tout
- * An ancestor of a node will tour in bbefore the child and leave after the child
+ * An ancestor of a node will tour in before the child and leave after the child
  * 
  * @param u Ancestor Node
  * @param v Child Node

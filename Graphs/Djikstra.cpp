@@ -24,7 +24,7 @@ priority_queue<pii, vector<pii>, greater<pii>> PQ;
 /**
  * @brief Djikstra
  * 
- * Djistra is used as  BFS for a weighted graph.
+ * Djistra is used as BFS for a weighted graph.
  * The differnce between Djikstra and standard BFS is the Djikstra uses Priority Queue
  * instead of a standard queue. The standard queue is sorted according to minimum value
  * of pair. The pair passes its first value for comparison which contains the distance
@@ -85,7 +85,7 @@ int main(){
     mem(vis, 0);
 
     FOR(i,1,6)
-        d[i]=INT_MAX;
+        d[i]=15;
 
     djikstra(1);
     cout<<d[5];                 // 15   =   min( 4+5+6 , 20 , 4+3+15 )

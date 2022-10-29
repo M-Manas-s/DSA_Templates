@@ -77,8 +77,6 @@ void merge(int a[], int low, int mid, int high){
         while( li<=mid )
             t[i++] = a[li++];
 
-   
-
     for ( int j=0,k = low ; k<=high; k++,j++ )
         a[k] = t[j];
 }

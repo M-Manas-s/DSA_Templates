@@ -34,7 +34,7 @@ int BS(vi &a, int r, int key,int l=0)
 }
 
 /**
- * @brief   Return length of LIS. ALso remember that tail array contains tails
+ * @brief   Return length of LIS. Also remember that tail array contains tails
  *          of the largest subsequence of that length, ending with smallest tail
  *          possible. It does not contain the actual subsequence itself.
  * 
@@ -56,7 +56,7 @@ int LIS(vi &v)
 
 		// If smaller than the tail of a sequence of existing length,
         // replace it
-		if (v[i] < tail[0])
+		if (v[i] <= tail[0])
 			tail[0] = v[i];
 
 		// If larger than the tail of largest sequence, add new sequence
@@ -68,7 +68,6 @@ int LIS(vi &v)
 			tail[BS(tail,length, v[i])] = v[i];
 
 	}
-
 	return length;
 }
 

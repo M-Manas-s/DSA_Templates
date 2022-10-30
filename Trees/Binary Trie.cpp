@@ -1,13 +1,6 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
 
 using namespace std;
-using namespace __gnu_pbds;
-
-#define vt vector
-#define vi vt<int>
-#define FIO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
-#define each(x, a) for (auto &x : a)
 
 /**
  * @brief Node for Binary Trie, can be improvised to have other
@@ -112,8 +105,8 @@ public:
      * 
      * This alone requires a recursive implementation for the sake of simplicity.
      * A double pass iterative approach will also work but recursion is better suited.
-     * So, the function reduces the count of children, and deletes the node 
-     * ( sets it to NLLL ) if no number passes through it.
+     * So, the function reduces the count of children, and deletes the node by
+     * deallocating the memory and setting it to null if no number passes through it.
      * 
      * @param cur current traversing node
      * @param x number to be deleted
@@ -128,9 +121,18 @@ public:
         cur->children[b]->cnt--;
         remove(cur->children[b],x,i-1);
         if ( cur->children[b]->cnt == 0 )
+        {
+            delete (cur->children[b]);
             cur->children[b] = NULL;
+        }
 
     }
+
+    /**
+     * @brief Wrapper around the remove function
+     * 
+     * @param x The number to be removed
+     */
 
     void remove(int x)
     {
@@ -166,14 +168,14 @@ public:
      * Again, because the height of the tree is fixed, it becomes lot easier
      * on the implementation end to compute this. We can keep traversing towards
      * the leaf if the bits are matching, else return false. Once we reach the leaf,
-     * return true.
+     * return the number of numbers ending there.
      * 
      * @param s 
-     * @return true if number is present or in other words, we reached the leaf.
-     * @return false if number isn't matching
+     * @return int The number of words ending here if at least one number is present.
+     * @return false if no number is present here.
      */
 
-    bool found(int s)
+    int found(int s)
     {
         TrieNode *cur = root;
         for (int i = bits; i >= 0; i--)
@@ -183,7 +185,7 @@ public:
                 return 0;
             cur = cur->children[b];
         }
-        return 1;
+        return cur->cnt;
     }
 
     /**
@@ -217,13 +219,14 @@ public:
 };
 
 signed main(){
-    FIO;
+
     BinaryTrie trie;
-    vi ins = {0,25,2};
+    vector<int> ins = {0,25,2,25};
     trie.insert(ins);
-    cout<<trie.found(25)<<endl;     // Yes
-    cout<<trie.found(26)<<endl;     // No
-    trie.remove(25);                
+    cout<<trie.found(25)<<endl;     // 2
+    cout<<trie.found(26)<<endl;     // 0
+    trie.remove(25);
+    trie.remove(25);        
     cout<<trie.max_xor(5)<<endl;    
     
     // Had 25 been there in the trie, answer would have been 25^5=28

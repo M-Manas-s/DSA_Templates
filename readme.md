@@ -15,7 +15,8 @@ To whoever reaches here, this is a repository where I store my DSA Algorithms an
 [BIT - Fenwick Tree](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/BIT-FenwickTree.cpp)\
 [DSU - Disjoin Set Union](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/DSU.cpp)\
 [Segment Tree](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/Segment%20Tree.cpp)\
-[Binary Trie](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/Binary%20Trie.cpp)
+[Binary Trie](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/Binary%20Trie.cpp)\
+[Trie](https://github.com/M-Manas-s/DSA_Templates/blob/master/Trees/Trie.cpp)
 
 ## Graphs
 [BFS](https://github.com/M-Manas-s/DSA_Templates/blob/master/Graphs/BFS.cpp)\

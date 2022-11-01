@@ -29,4 +29,4 @@ To whoever reaches here, this is a repository where I store my DSA Algorithms an
 [String Hashing](https://github.com/M-Manas-s/DSA_Templates/blob/master/String/StringHashing.cpp)
 
 ## Miscellaneous
-[Sparse Table](https://github.com/M-Manas-s/DSA_Templates/blob/master/Miscellaneous/Sparse%20Table.cpp)
+[Sparse Table](https://github.com/M-Manas-s/DSA_Templates/blob/master/Misc/Sparse%20Table.cpp)
